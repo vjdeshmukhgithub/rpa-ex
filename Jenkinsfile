@@ -26,7 +26,7 @@ pipeline {
         stage('Orch Publish') {
             steps {
                 script {
-                    orchPublish("HCT") 
+                    orchPublish("VerticalApps") 
                 }
             }
         }
