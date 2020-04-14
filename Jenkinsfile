@@ -30,13 +30,6 @@ pipeline {
                 }
             }
         }
-        stage('Git Checkin'){
-            steps {
-                script{
-                    gitCheckin()
-                }
-            }
-        }
         stage('Post-Build') {
             steps {
                 postBuild()
