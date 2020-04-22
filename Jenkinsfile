@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library@master') _
+@Library('rpa-sharedlib@master') _
 
 pipeline {
     agent any
