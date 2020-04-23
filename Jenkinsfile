@@ -11,11 +11,11 @@ pipeline {
                 )
             }
         }
-        //stage('Sonar') {
-       //     steps {
-        //        sonarQubeScan()
-      //      }
-       // }
+        stage('Sonar') {
+            steps {
+                sonarQubeScan()
+            }
+        }
         stage('Build') {
             steps {
                 script {
