@@ -23,6 +23,20 @@ pipeline {
                 }
             }
         }
+        stage('IQ Server') {
+            steps {
+                script {
+                    
+                    try {
+                        nexusPolicyEvaluation advancedProperties: '', failBuildOnNetworkError: false, iqApplication: selectedApplication('uipath'), iqStage: 'build', jobCredentialsId: ''
+                      } catch (error) {
+                        throw error
+                      }
+                    
+                    
+                }
+            }
+        }
         stage('Orch Publish') {
             steps {
                 script {
