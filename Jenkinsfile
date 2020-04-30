@@ -1,4 +1,4 @@
-@Library('rpa-sharedlib') _
+@Library('rpa-sharedlib@master') _
 
 pipeline {
     agent any
