@@ -1,5 +1,5 @@
 {
-  "name": "uipath-package",
+  "name": "Test",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
