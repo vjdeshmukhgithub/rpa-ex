@@ -1,4 +1,4 @@
-@Library('rpa-sharedlib@master') _
+@Library('rpa-sharedlib') _
 
 pipeline {
     agent any
@@ -40,7 +40,7 @@ pipeline {
         stage('Orch Publish') {
             steps {
                 script {
-                    orchPublish("USCIS-RPA-COE") 
+                    orchPublish("USCIS-RPA-COE",1) 
                 }
             }
         }
